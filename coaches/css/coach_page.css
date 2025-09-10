@@ -1,0 +1,123 @@
+/*
+ * coach_page.css
+ *
+ * Purpose: Stylesheet for the Coach Page layout.
+ * Defines styling for the three-column layout, coach cards, news feed, and video highlight cards.
+ *
+ * Author: Haoran Li (Mike)
+ * Date: April 25, 2025
+ * Student Number: 400495145
+ */
+
+/* ========== Global Body Styling ========== */
+body {
+  font-family: "Oxanium", sans-serif;
+  margin: 0;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* ========== Coach Page Container Layout ========== */
+.coach-container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  min-height: 90vh;
+}
+
+/* ========== Column Styles ========== */
+.column {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 1.5rem;
+  flex-grow: 1;
+  overflow-y: auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.column-left {
+  flex-basis: 25%;
+}
+
+.column-middle {
+  flex-basis: 35%;
+}
+
+.column-right {
+  flex-basis: 40%;
+}
+
+/* ========== Headings ========== */
+h2, h3 {
+  color: #d03b43;
+  margin-top: 0;
+}
+
+/* ========== News Feed Styling ========== */
+#news-feed li {
+  color: white;
+  padding: 5px 0;
+  border-bottom: 1px solid #333;
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+/* ========== Placeholder Text ========== */
+.placeholder {
+  font-style: italic;
+  color: #aaa;
+  margin-top: 1rem;
+}
+
+/* ========== Coach Card Styling ========== */
+.coach-card {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 12px rgba(208, 59, 67, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.coach-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(208, 59, 67, 0.5);
+}
+
+.coach-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.coach-card p {
+  margin: 0;
+  color: #cccccc;
+  line-height: 1.4;
+}
+
+/* ========== Video Card Styling ========== */
+.video-card {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+.video-card video {
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #d03b43;
+}
+
+.video-card .video-info {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 0.95rem;
+}

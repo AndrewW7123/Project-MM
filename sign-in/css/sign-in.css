@@ -1,0 +1,146 @@
+/**
+Name: Evan Burlaca
+Student Number: 400574598
+Date: March 12, 2025
+Description: CSS file which contains styling information resposnible for
+             formatting the login page (sign-in/index.php)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background-color: rgba(0, 0, 0, 0.951);
+    color: #d03b43;
+    font-size: xx-large;
+    margin: auto;
+    font-family: "Oxanium", serif;
+}
+
+#feedback1{
+    margin:0;
+    margin-top: 35px;
+}
+
+#feedback2{
+    color: rgb(135, 74, 8);
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.right{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 70px;
+    color: white;
+}
+
+#signUp{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 180px;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: rgba(226, 38, 60, 1);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#signUp:hover{
+    filter: brightness(125%);
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+hr {
+    width: 95%;
+    border-color: #d03b43;
+    border-width: 3px;
+    margin-bottom: 75px;
+}
+
+.inputs {
+    font-size: 18px;
+    width: 400px;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.inputs:hover {
+    background-color: rgba(255, 255, 255, .20);
+}
+
+.inputs:focus {
+    background-color: rgba(255, 255, 255, .20);
+    caret-color: rgb(255, 255, 255);
+}
+
+.inputs::placeholder {
+    color: rgba(255, 255, 255, .75);
+}
+
+#submit{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    color: white;
+    background-color: rgba(226, 38, 60, 1);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#submit:hover, a:hover {
+    filter: brightness(125%);
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#img5050{
+    width: 25%;
+    height: 13%;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#redimg5050{
+    width: 16%;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}

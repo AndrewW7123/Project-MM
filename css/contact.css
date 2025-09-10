@@ -1,0 +1,46 @@
+#main {
+    background-color: rgb(17, 17, 17);
+    border: solid 2px transparent;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+}
+
+h2 {
+    font-size: 20px;
+    color: white;
+}
+
+#contactpanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contacts {
+    margin: 2%;
+    padding: 1%;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(45, 45, 45);
+    border: solid 2px transparent;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    h3 {
+        font-size: 15px;
+    }
+    .contacts {
+        width: 250px;
+        height: 250px;
+    }
+}

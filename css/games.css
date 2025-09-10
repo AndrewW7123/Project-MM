@@ -1,0 +1,154 @@
+/*
+ * games.css
+ *
+ * Purpose: Stylesheet for the Games page.
+ * Defines layout and styling for the game catalog page, category filter bar, and game cards.
+ *
+ * Author: Haoran Li (Mike)
+ * Date: April 25, 2025
+ * Student Number: 400495145
+ */
+
+/* ========== Import Fonts ========== */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* ========== Basic Page Settings ========== */
+html, body {
+  height: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+/* ========== Page Container Layout ========== */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ========== Bottom Section Layout ========== */
+.bottom-section {
+  display: flex;
+  flex: 1;
+  height: calc(100% - 80px);
+  overflow: hidden;
+}
+
+/* ========== Left Content: Catalog Intro ========== */
+.left-content {
+  width: 30%;
+  background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid #222;
+}
+
+.left-content h1 {
+  color: #d03b43;
+  font-size: 5rem;
+  margin-bottom: 1.2rem;
+}
+
+.left-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+/* ========== Right Content: Game Section ========== */
+.right-content {
+  background-color: rgb(17, 17, 17);
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* ========== Category Filter Bar ========== */
+.category-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+.category {
+  font-family: "Oxanium", serif;
+  background: none;
+  border: 1px solid #d03b43;
+  color: #d03b43;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.category:hover,
+.category.active {
+  background-color: #d03b43;
+  color: black;
+}
+
+/* ========== Scrollable Game List ========== */
+.game-list {
+  overflow-y: auto;
+  display: block;
+  max-height: 100%;
+  padding-right: 1rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* ========== Game Card Styling ========== */
+.game-card {
+  display: flex;
+  height: 200px;
+  background-color: #1c1c1c;
+  border-radius: 0px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.game-card:hover {
+  transform: scale(1.03);
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.game-card:hover .game-info {
+  border-left: 6px solid #d03b43;
+  background-color: #1f1f1f;
+}
+
+/* ========== Game Image Styling ========== */
+.game-image {
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== Game Info Text Section ========== */
+.game-info {
+  flex-grow: 1;
+  background-color: #141414;
+  color: #ffffff;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-left: 6px solid #d03b43;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0 0 10px rgb(98, 19, 19);
+  background: linear-gradient(90deg, #141414 0%, #1a1a1a 100%);
+}

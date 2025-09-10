@@ -1,0 +1,9 @@
+/*WHEN THE SCREEN SIZE IS LOWER THAN 1200px, THE DESKTOP NAVIGATION DISAPPEARS. HAMBURGER MENU SHOWS UP */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+}

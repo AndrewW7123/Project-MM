@@ -1,0 +1,95 @@
+/*
+Andrew Whitehead
+400581822
+March 12, 2025
+CSS stylesheet for the project-mm sign-up page
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background-color: rgba(0, 0, 0, 0.951);
+    margin: 0;
+    padding: 0;
+    font-family: "Oxanium", serif;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    color: white;
+    margin: 0;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#login img {
+    width: 8%;
+}
+
+.inputs {
+    font-size: 18px;
+    width: 400px;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.inputs:hover {
+    background-color: rgba(255, 255, 255, .20);
+}
+
+.inputs:focus {
+    background-color: rgba(255, 255, 255, .20);
+    caret-color: rgb(255, 255, 255);
+}
+
+.inputs::placeholder {
+    color: rgba(255, 255, 255, .75);
+
+}
+
+#coach {
+    width: 30px;
+    height: 30px;
+}
+
+#coach:hover {
+    cursor: pointer;
+}
+
+#submit, a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    color: white;
+    background-color: rgba(226, 38, 60, 1);
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+#submit:hover, a:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}

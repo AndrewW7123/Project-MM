@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: "Oxanium", serif;
+    background-color: #18191c;
+    color: #d03b43;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* TRANSITION */
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAVIGATION */
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+a {
+    color: #a7a7a7;
+    text-decoration: none;
+    text-decoration-color: #18191c;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: flex;
+    z-index: 1000; /* A high value to ensure it's on top */
+    position: relative; /* z-index only works on positioned elements */
+}
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: #7d1eb8;
+    transition: 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: #18191c;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.25rem;
+    color: #7d1eb8;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+/* TURN THE ICON INTO AN X WHEN OPEN */
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon-span:first-child {
+    transform: none;
+}
+
+.hamburger-icon-span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon-span:first-child {
+    transform: none;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Style the scrollbar itself */
+::-webkit-scrollbar {
+    width: 8px;
+    /* width of the entire scrollbar */
+}
+
+/* Style the handle (part that you drag) */
+::-webkit-scrollbar-thumb {
+    background-color: #36383d;
+    /* color of the draggable part */
+    border-radius: 4px;
+    /* roundness of the draggable part */
+}
+
+/* Style the track (part that the handle moves within) */
+::-webkit-scrollbar-track {
+    background: #18191c;
+    /* color of the track */
+    border-radius: 10px;
+    /* roundness of the track */
+}
